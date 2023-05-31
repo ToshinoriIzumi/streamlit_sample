@@ -4,4 +4,4 @@ RUN mkdir /opt/app
 WORKDIR /opt/app
 COPY ./requirements.txt /opt/app/requirements.txt
 ENV PYTHONPATH=/opt/app
-RUN pip install -r requirements.txt && rm requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt && rm requirements.txt
