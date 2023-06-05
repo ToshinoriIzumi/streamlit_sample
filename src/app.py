@@ -4,13 +4,13 @@ import pickle
 import pandas as pd
 import streamlit as st
 
-st.title('predicting with machine learning model!')
+st.title('アヤメの品種分類')
 
 # モデルのファイル一覧を取得
 model_list_dir = os.path.join(os.path.dirname(__file__), 'models')
 model_list = os.listdir(model_list_dir)
 
-if len(model_list) == 0:
+if len(model_list) == 1:
     st.write('No model file')
 else:
     model_list.remove('.keep')

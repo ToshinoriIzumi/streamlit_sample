@@ -29,7 +29,7 @@ def train_model(x, y):
     return model
 
 
-st.header('Train model')
+st.header('モデルの作成')
 
 # モデルファイル名の入力フォーム
 with st.form('train_model'):
